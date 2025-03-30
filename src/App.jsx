@@ -4,6 +4,7 @@ import { LoadingScreen } from './components/LoadingScreen';
 import { Navbar } from './components/Navbar';
 import { MobileMenu } from './components/MobileMenu';
 import { useState } from 'react';
+import { Home } from './components/Sections/Home';
 
 function App() {
   const [isLoaded, setLoaded] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           menuOpen={menuOpen} 
           setMenuOpen={setMenuOpen} 
         />
+        <Home/>
         {/* Add your main content here */}
       </div>
     </>
