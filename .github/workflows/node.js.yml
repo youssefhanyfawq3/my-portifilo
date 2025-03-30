@@ -1,0 +1,33 @@
+name: Deploy React Dev Server
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Bun
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: latest
+
+    - name: Install dependencies
+      run: bun install
+
+    - name: Start development server
+      run: |
+        bun run dev --port 8080 &
+        sleep 10 # Give server time to start
+        curl http://localhost:8080 # Verify server is running
+      env:
+        CI: true
+
+    # Optional: Add deployment step for your hosting provider
+    # - name: Deploy to Cloud Provider
+    #   run: your-deployment-command-here
