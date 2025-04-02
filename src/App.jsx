@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { Home } from './components/Sections/Home';
 import { About } from './components/Sections/About';
 import { Projects } from './components/Sections/Projects';
+import { Contact } from './components/Sections/Contact';
 
 function App() {
   const [isLoaded, setLoaded] = useState(false);
@@ -37,6 +38,7 @@ function App() {
         <Home/>
         <About/>
         <Projects/>
+        <Contact/>
         {/* Add your main content here */}
       </div>
     </>

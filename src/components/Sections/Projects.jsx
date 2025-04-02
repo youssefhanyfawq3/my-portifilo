@@ -33,7 +33,7 @@ export const Projects = () => {
                 </h2>
 
                 {/* Project Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
                     {projects.map((project, index) => (
                         <article
                             key={index}
@@ -49,11 +49,11 @@ export const Projects = () => {
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tools.map((tool, idx) => (
                                     <span
-                                        key={idx}
-                                        className="bg-gray-500/10 text-gray-500 py-1 px-3 rounded-full text-sm"
-                                    >
-                                        {tool}
-                                    </span>
+                                    key={index}
+                                    className="bg-green-500/10 text-green-500 py-1 px-4 rounded-full text-sm hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(34,197,94,0.2)] transition"
+                                >
+                                    {tool}
+                                </span>
                                 ))}
                             </div>
 

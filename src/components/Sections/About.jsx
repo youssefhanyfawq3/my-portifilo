@@ -29,7 +29,7 @@ export const About = () => {
                 </h2>
 
                 {/* Content Section */}
-                <div className="rounded-xl p-8 border-gray-700/20 hover:translate-y-1 transition-all border border-white/10">
+                <div className="rounded-xl p-8  hover:translate-y-1 transition-all border border-white/10">
                     <p className="text-gray-300 mb-6">
                         Passionate developer with expertise in building scalable web applications and creating innovative solutions.
                     </p>
@@ -37,7 +37,7 @@ export const About = () => {
                     {/* Skills Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
                         {/* Frontend Skills */}
-                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                        <div className="rounded-xl p-6 hover:scale-105 transition-all">
                             <h3 className="text-xl font-bold mb-4">Frontend</h3>
                             <div className="flex flex-wrap gap-2">
                                 {FrontendSkills.map((skill, index) => (
@@ -52,7 +52,7 @@ export const About = () => {
                         </div>
 
                         {/* Backend Skills */}
-                        <div className="rounded-xl p-6 hover:-translate-y-1 transition-all ">
+                        <div className="rounded-xl p-6 hover:scale-105 transition-all ">
                             <h3 className="text-xl font-bold  mb-4">Backend</h3>
                             <div className="flex flex-wrap gap-2">
                                 {BackendSkills.map((skill, index) => (
@@ -71,7 +71,7 @@ export const About = () => {
                 {/* Education and Work Experience */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                     {/* Education */}
-                    <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
+                    <div className="p-6 rounded-xl border border-white/10 hover:scale-105 transition-all">
                         <h3 className="text-xl font-bold mb-4">🎓 Education</h3>
                         <ul className="space-y-2 list-disc list-inside ">
                             <li>
@@ -82,7 +82,7 @@ export const About = () => {
                     </div>
 
                     {/* Work Experience */}
-                    <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
+                    <div className="glass p-6 rounded-xl border border-white/10 hover:scale-105 transition-all">
                         <h4 className="text-xl font-semiboldbold mb-4 ">👨‍💻 Work Experience</h4>
                         <ul className="space-y-2 list-disc list-inside ">
                             
