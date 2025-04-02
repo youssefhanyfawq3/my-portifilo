@@ -43,3 +43,34 @@ html,body{
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Move to its final position */
 }
+
+
+
+/* scrollbar.css */
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: thin; /* "auto" | "thin" | "none" */
+  scrollbar-color: oklch(0.63 0.2 262.19) rgba(27, 27, 27, 0.1); /* thumb and track color */
+}
+
+/* WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(36, 36, 36, 0.1); /* Track color */
+  border-radius: 20px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(147, 197, 253, 0.5); /* Thumb color (blue from your theme) */
+  border-radius: 20px; /* Rounded corners for the thumb */
+  border: 3px solid rgba(255, 255, 255, 0.2); /* Border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8); /* Darker blue on hover */
+}
