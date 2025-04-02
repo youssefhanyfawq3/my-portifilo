@@ -100,3 +100,6 @@ html,body{
     border-color: white;
   }
 }
+button,a{
+  user-select: none;
+}
