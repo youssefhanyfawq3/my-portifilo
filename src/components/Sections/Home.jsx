@@ -4,9 +4,17 @@ export const Home  = () => {
     return <section id="home" className="min-h-screen flex items-center justify-center relative">
         <RevealOnScroll>        
             <div className="text-center z-10 px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-500 py-3 to-cyan-400 bg-clip-text text-transparent   leading-right">
-                Hi iam Youssef Hany 
-            </h1>
+            <h1
+  className="text-5xl md:text-6xl py-4 font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent overflow-hidden whitespace-nowrap"
+  style={{
+    borderRight: "2px solid white", // Cursor effect
+    width: "fit-content",
+    animation: "typing 3s steps(30, end), blink-caret 0.75s step-end infinite",
+    animationDelay: "2.5s",
+  }}
+>
+  Hi, I am Youssef Hany
+</h1>
 
             <p className="text-gray-400 text-lg mb-8 mt-12 max-w-lg mx-auto">
             Full Stack Developer crafting scalable, innovative web applications with clean, maintainable code.            </p>
