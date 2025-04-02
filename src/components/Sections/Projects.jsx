@@ -13,7 +13,7 @@ export const Projects = () => {
             title: "E-commerce Store",
             description: "A full-stack e-commerce platform with user authentication and payment integration.",
             link: "https://example.com/ecommerce",
-            tools: ["Node.js", "Express.js", "MongoDB", "Stripe"]
+            tools: ["Node.js", "Express.js", "MongoDB"]
         },
         {
             title: "Weather App",
@@ -24,7 +24,7 @@ export const Projects = () => {
     ];
 
     return (
-        <section className="min-h-screen flex items-center justify-center py-20" id="projects">
+        <section className="min-h-screen flex items-center justify-center py-20 " id="projects">
             <RevealOnScroll> 
             <div className="max-w-3xl mx-auto px-4">
                 {/* Heading */}
