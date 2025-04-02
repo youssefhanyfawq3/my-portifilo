@@ -5,6 +5,8 @@ import { Navbar } from './components/Navbar';
 import { MobileMenu } from './components/MobileMenu';
 import { useState } from 'react';
 import { Home } from './components/Sections/Home';
+import { About } from './components/Sections/About';
+import { Projects } from './components/Sections/Projects';
 
 function App() {
   const [isLoaded, setLoaded] = useState(false);
@@ -33,6 +35,8 @@ function App() {
           setMenuOpen={setMenuOpen} 
         />
         <Home/>
+        <About/>
+        <Projects/>
         {/* Add your main content here */}
       </div>
     </>
