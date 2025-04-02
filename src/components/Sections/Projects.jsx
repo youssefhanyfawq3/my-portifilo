@@ -49,7 +49,7 @@ export const Projects = () => {
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tools.map((tool, idx) => (
                                     <span
-                                    key={index}
+                                    key={idx}
                                     className="bg-green-500/10 text-green-500 py-1 px-4 rounded-full text-sm hover:bg-green-500/20 hover:shadow-[0_2px_8px_rgba(34,197,94,0.2)] transition"
                                 >
                                     {tool}

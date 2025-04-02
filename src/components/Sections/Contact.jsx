@@ -99,7 +99,7 @@ export const Contact = () => {
                         <div className="relative">
                             <button
                                 type="submit"
-                                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded transition duration-300 hover:-translate-y-1 hover:shadow-[0px_0px_15px_rgba(59,130,246,0.4)]"
+                                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded transition-all duration-300 hover:-translate-y-1 hover:shadow-[0px_0px_15px_rgba(59,130,246,0.4)]"
                             >
                                 Submit
                             </button>
