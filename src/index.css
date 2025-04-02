@@ -12,6 +12,13 @@ html,body{
   
 
 }
+::selection{
+  background-color: oklch(70.3% 0.219 149.579);
+  color: #ffffff;
+
+}
+
+
 @layer utilities {
   @keyframes loading-bar {
     0% { width: 0% }
